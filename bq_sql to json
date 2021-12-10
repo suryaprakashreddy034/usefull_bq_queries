@@ -1,0 +1,4 @@
+WITH Input AS (SELECT * FROM `gcptesting-331417.beer.beer_data`)
+SELECT
+  TO_JSON_STRING(t) AS json_row
+FROM Input AS t;
